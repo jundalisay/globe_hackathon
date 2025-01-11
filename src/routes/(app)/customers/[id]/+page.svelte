@@ -59,10 +59,6 @@
   <p class="text-lg mb-4">{data.item.description}</p>
   <p class="text-xl font-semibold mb-4">${data.item.price}</p>
 
-    <label class="block mb-2">Amount to Get:</label>
-    <!-- <input type="number" bind:value={amount} min="1" class="border border-gray-300 rounded p-2 w-full mb-4" /> -->
-    <input required id="quantity" type="number" bind:value={amount} min="1" class="border border-gray-300 rounded p-2 w-full mb-4" />
-  
   {#if $errorMessage}
     <div class="error-message" style="color: red;">
       {$errorMessage}
